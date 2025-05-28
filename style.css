@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "custom";
+    src: url(NevisBold-KGwl.ttf) format("truetype");
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: rgb(255, 219, 88);
+    text-align: left;
+    padding: 20px;
+    font-family: "custom";
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #16213e;
+    color: #eaeaea;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {background-color: #0f172b;}
+button:active {transform: translateY(1px);}
+
+#bar{
+    width: 203px;
+    height: 15px;
+    border-radius: 4px;
+    background-color: rgb(40, 45, 120);
+}
+
+#sellProgress {
+    width: 0%;
+    height: 15px;
+    border-radius: 4px;
+    background-color: rgb(58, 66, 181);
+}
+
+/* Resources */
+#resourceBar {
+    width: 203px;
+    height: 15px;
+    border-radius: 4px;
+    background-color: rgb(40, 45, 120);
+    font-size: medium;
+}
+
+#resourceBarAmount {
+    width: 0%;
+    height: 15px;
+    border-radius: 4px;
+    background-color: rgb(58, 66, 181);
+}
+
+
+
+/* div{border: solid white 1px;} */
+
+.inline{display: inline;}
+
+.seperationLine{
+    position: absolute;
+    background-color: rgb(255, 219, 88);
+    height: 2px;
+    width: 250px;
+}
+
+#processesLine{
+    top: 260;
+}

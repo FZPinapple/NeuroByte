@@ -1,0 +1,47 @@
+<html lang="en">
+    <head>
+        <title>NeuroByte Corporation</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <p>&nbsp;>&ensp;<span id="readout1">Hire an employee to get started</span></p>
+        <h1><img src="NeuroByte.png" width="30px"> NeuroByte Corp.</h1>
+        <div id="leftColumn">
+
+            <p>Funds: $<span id="funds">0</span></p><!-- Money -->
+            
+            <!-- Resources Tab -->
+            <h2>Resources<div class="seperationLine"></div></h2>
+
+            <span id="currentResources"></span>/<span id="maxResources"></span> Resources<!-- Resource Amount -->
+            <div id="resourceBar">
+                <div id="resourceBarAmount"></div>
+            </div>
+
+            <br><button onclick="hireEmployee()">Hire Employee<br>$<span id="employeeCost"></button><!-- Hire Employee Button -->
+            <p>Employees: <span id="employeeAmount">0</span></p><!-- Employee Amount -->
+
+            <!-- Processes Tab -->
+            <h2>Processes<div class="seperationLine"></div></h2>
+            
+            <button onclick="manufactureChip()">Manufacture NeuroByte<br>Resources: 1</button><!-- Manufacture NeuroByte Button -->
+
+            <div class="processes">
+                <p class="inline"><br>Neuro Chips: <span id="chips">0</span></p>
+                <p>
+                    <button onclick="sellChipBar()" id="sellChipButton">Sell Chips</button> Chip Price: $<span id="price">1</span>
+                    <div id="bar">
+                        <div id="sellProgress"></div>
+                    </div>
+                </p>
+            </div>
+
+            <h2>Automation<div class="seperationLine"></div></h2>
+
+            <button id="printerButton" onclick="buyPrinter()" style="display: none;">Buy 3D Printer<br>$<span id="printerCost">10</span></button>
+            <p>3D Printers: <span id="printers">0</span></p>
+
+        </div>
+    </body>
+</html>
